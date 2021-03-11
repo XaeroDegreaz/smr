@@ -13,7 +13,7 @@ jobs:
       - name: Build API Docs
         uses: ./.github/actions/api-docs
       - name: Install SSH Client
-        uses: webfactory/ssh-agent@v0.4.1
+        uses: webfactory/ssh-agent@v0.5.1
         with:
           ssh-private-key: ${{ secrets.API_DOCS_DEPLOY_KEY }}
       - name: Publish API Docs
